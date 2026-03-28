@@ -13,7 +13,15 @@
  * It's a best practice to use a different partial for each page
  */
 
-@use "layouts/home";
+//@use "layouts/home";
+//@use "settings/variables";
+@use "tools/tools";
+@use "generic/generic";
+@use "elements/elements";
+@use "objects/objects";
+@use "components/uoc";
+@use "components/mapa";
+@use "components/footer";
 
 /**
  * Do NOT include anything else in this file!

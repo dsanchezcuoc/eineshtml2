@@ -1,0 +1,25 @@
+@use "../settings/variables";
+
+.uoc-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+  max-width: 200px;
+  height: auto;
+
+  @media (min-width: variables.$mqMinWidth) {
+    max-width: none;
+  }
+}
+
+.uoc-title {
+  font-family: variables.$font-family-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: variables.$uoc-corporate;
+
+  @media (min-width: variables.$mqMinWidth) {
+    font-size: 36px;
+  }
+}
