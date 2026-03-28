@@ -1,34 +1,110 @@
 <!doctype html>
-
-<html>
+<html lang="ca">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="../node_modules/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
     <!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>Ruta Alcaufar Menorca</title>
+    <script defer src="../node_modules/leaflet/dist/leaflet.js"></script>
+    <script defer src="./assets/js/mapa.js"></script>
   </head>
   <body>
     <div class="uoc-container">
-      <picture>
-        <source
-          srcset="./assets/images/logo.png?as=webp&width=350"
-          type="image/webp"
-        />
-        <img
-          src="./assets/images/logo.png?width=350"
-          alt="Universitat Oberta de Catalunya"
-          class="uoc-logo"
-        />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+      <header>
+        <h1>Ruta Alcaufar Vell - Torre i Cala Alcaufar</h1>
+        <h2>Una ruta curta i senzilla per descobrir a Sant Lluís, Menorca.</h2>
+      </header>
+      <nav aria-label="Navegació principal">
+        <ul>
+          <li><a href="#inici">Inici</a></li>
+          <li><a href="#fitxa">Fitxa tècnica</a></li>
+          <li><a href="#mapa">Mapa</a></li>
+          <li><a href="#interes">Punts d'interès</a></li>
+        </ul>
+      </nav>
+      <section>
+          <h3>Presentació de la ruta</h3>
+          <p>
+            Aquesta ruta connecta Alcaufar Vell, la Torre d'Alcaufar i Cala Alcaufar en un recorregut pensat per a una passejada tranquil·la.
+          </p>
+        </section>
+            <section>
+          <h3>Fitxa tècnica</h3>
+          <dl>
+            <div>
+              <dt><i class="fa-solid fa-route"></i>Distància</dt>
+              <dd>4,96 km</dd>
+            </div>
+            <div>
+              <dt><i class="fa-solid fa-person-hiking"></i>Dificultat tècnica</dt>
+              <dd>Fàcil</dd>
+            </div>
+            <div> 
+              <dt><i class="fa-solid fa-mountain" aria-hidden="true"></i>Desnivell</dt>
+              <dd>+22 m / -73 m</dd>
+            </div>
+            <div>
+              <dt><i class="fa-solid fa-hourglass"></i>Temps estimat</dt>
+              <dd>1 h 26 min</dd>
+            </div>
+          </dl>
+        </section>
+        <div class="mapa">
+          <div id="map"></div>
+        </div>
+        <section>
+          <h3>Punts d'interès</h3>
+
+          <article>
+            <picture>
+            <source
+              srcset="./assets/images/alcaufar_vell.jpg?as=webp&width=350"
+              type="image/webp"
+            />
+            <img
+              src="./assets/images/alcaufar_vell.jpg?width=350"
+              alt="Lloc d'Alcaufar Vell"
+              class="uoc-logo"
+            />
+          </picture>
+            <h4>Alcaufar Vell</h4>
+            <p>Finca històrica i punt d'inici de la ruta.</p>
+          </article>
+
+          <article>
+            <picture>
+            <source
+              srcset="./assets/images/torre_alcaufar.jpg?as=webp&width=350"
+              type="image/webp"
+            />
+            <img
+              src="./assets/images/torre_alcaufar.jpg?width=350"
+              alt="Torre d'Alcaufar"
+              class="uoc-logo"
+            />
+          </picture>
+            <h4>Torre d'Alcaufar</h4>
+            <p>Torre de vigilància amb vistes a la costa.</p>
+          </article>
+
+          <article>
+            <picture>
+            <source
+              srcset="./assets/images/cala_alcaufar.jpg?as=webp&width=350"
+              type="image/webp"
+            />
+            <img
+              src="./assets/images/cala_alcaufar.jpg?width=350"
+              alt="Cala d'Alcaufar"
+              class="uoc-logo"
+            />
+          </picture>
+            <h4>Cala Alcaufar</h4>
+            <p>Cala tranquil·la i final de la ruta.</p>
+          </article>
+        </section>   
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script>
     <!-- do not remove this line! -->
