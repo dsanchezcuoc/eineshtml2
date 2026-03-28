@@ -1,0 +1,32 @@
+@use "../settings/variables";
+@use "../tools/tools";
+
+.presentacio-ruta {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+
+  .presentacio-ruta__grid {
+    @include tools.grid-layout(280px, 1.5rem);
+  }
+
+  .presentacio-ruta__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 5px 5px 5px;
+    padding: 5px;
+    border-radius: 5px;
+
+    h3 {
+      margin-top: 0.25rem;
+      margin-bottom: 0.25rem;
+    }
+
+    p {
+      margin: 0;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      text-align: left;
+    }
+  }
+}

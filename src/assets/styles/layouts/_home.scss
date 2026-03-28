@@ -6,7 +6,7 @@
 }
 
 body {
-  // a generic tot i que per les propietats que te dubto si haria d'anar a  tools canviant selector
+  // a elemets tot i que per les propietats que te dubto si haria d'anar a  tools canviant selector
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -19,6 +19,7 @@ body {
   color: variables.$uoc-corporate;
 }
 
+// a objects
 .uoc-container {
   max-width: 800px;
   margin: auto;

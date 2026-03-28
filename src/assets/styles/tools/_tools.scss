@@ -1,0 +1,16 @@
+@use "../settings/variables";
+
+@mixin grid-layout($columns-min: 210px, $gap: 1.5rem) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($columns-min, 1fr));
+  gap: $gap;
+
+  // Mobile-first: per mòbil força "1 fr" si el grid col·lapsa massa
+  @media (max-width: ((variables.$mqMinWidth - 1px))) {
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: variables.$mqMinWidth) {
+    grid-template-columns: repeat(auto-fit, minmax($columns-min, 1fr));
+  }
+}

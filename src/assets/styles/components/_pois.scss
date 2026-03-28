@@ -1,0 +1,33 @@
+@use "../settings/variables";
+@use "../tools/tools";
+
+.punts-interes {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+
+  .punts-interes__grid {
+    @include tools.grid-layout(280px, 1.5rem);
+  }
+
+  .punts-interes__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    img {
+      border-radius: 1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    h4 {
+      margin-top: 0.25rem;
+      margin-bottom: 0.25rem;
+    }
+
+    p {
+      margin: 0;
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+  }
+}

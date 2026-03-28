@@ -19,8 +19,10 @@
 @use "generic/generic";
 @use "elements/elements";
 @use "objects/objects";
-@use "components/uoc";
+//@use "components/uoc";
+@use "components/presentacioruta";
 @use "components/mapa";
+@use "components/pois";
 @use "components/footer";
 
 /**
