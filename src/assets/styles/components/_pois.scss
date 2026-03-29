@@ -19,6 +19,19 @@
       margin-bottom: 0.75rem;
     }
 
+    picture {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 1.5rem;
+      max-width: 200px;
+      height: auto;
+
+      @media (min-width: variables.$mqMinWidth) {
+        max-width: none;
+      }
+    }
+
     h4 {
       margin-top: 0.25rem;
       margin-bottom: 0.25rem;
